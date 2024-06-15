@@ -67,3 +67,108 @@ a {
   margin-top: 140px;
   text-align: center;
 }
+
+/* heritage */
+body {
+  width: 1080px;
+  height: 1920px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.firstbox,
+.secondbox,
+.thirdbox {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.firstbox {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/heri1.png);
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  /* z-index: 1; */
+}
+.secondbox {
+  top: 550px;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  background-image: url(./images/heri2.png);
+
+  clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 85%);
+  /* z-index: 0; */
+}
+.thirdbox {
+  top: 1220px;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/heri3.png);
+
+  clip-path: polygon(-10% 0%, 100% 18%, 100% 100%, 0% 100%);
+  /* z-index: 0; */
+}
+.firstbox::before,
+.secondbox::before,
+.thirdbox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.firstbox p,
+.secondbox p,
+.thirdbox p {
+  position: relative;
+  color: white;
+  z-index: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.secondbox p {
+  top: 150px;
+}
+.text1 {
+  margin: 150px 0 0 40px;
+}
+/* 공통 텍스트 속성 */
+.text_big {
+  font-weight: 800;
+  font-size: 90px;
+  margin-bottom: 5px;
+}
+.text_medium {
+  font-weight: 400;
+  font-size: 90px;
+  margin-bottom: 10px;
+}
+.lt {
+  left: 969px;
+  bottom: 140px;
+  font-size: 90px;
+  font-weight: 800;
+}
+.secondbox {
+  display: flex;
+}
+.text2 {
+  position: relative;
+
+  top: 195px;
+  left: 100px;
+}
+.text3 {
+  margin: 300px 0 0 40px;
+}
