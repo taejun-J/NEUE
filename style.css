@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.landing-frame {
+  width: 1080px;
+  height: 1920px;
+}
+.dim {
+  width: 1080px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.landing-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1080px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 20%;
+}
+.landing-main {
+  position: relative;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.land_logo {
+  width: 100px;
+  margin-top: 190px;
+}
+.logo_div p {
+  font-size: 20pt;
+  margin-top: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.land_mid {
+  position: absolute;
+  margin-top: 1030px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+.land_mid h3 {
+  margin-right: 150px;
+  font-size: 33pt;
+}
+.land_mid p {
+  margin-left: 180px;
+  font-size: 33pt;
+  font-weight: 200;
+}
+.mid_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.touch {
+  font-size: 26px;
+  margin-top: 140px;
+  text-align: center;
+}
