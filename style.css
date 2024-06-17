@@ -99,14 +99,37 @@ a {
 
 .main-text-1-container {
   position: relative;
-  left: 140px;
+  left: 145px;
   top: 400px;
 }
 
 .main-text-2-container {
   position: relative;
   top: 480px;
-  left: 50%;
+  left: 48%;
+}
+
+.main-text-3-container {
+  position: relative;
+  top: 880px;
+  left: 20px;
+  width: 323px;
+}
+
+.main-text-4-container {
+  position: relative;
+  top: 721px;
+  left: 843px;
+  width: 218px;
+}
+
+.main-left-arrow {
+  padding-top: 20px;
+}
+
+.main-right-arrow {
+  padding-top: 20px;
+  padding-left: 110px;
 }
 
 .nav {
