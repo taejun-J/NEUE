@@ -320,18 +320,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black; /* 내용이 보일 때 배경색 */
-  color: white; /* 내용의 텍스트 색상 */
+  background-color: black;
+  color: white;
   padding: 20px;
   box-sizing: border-box;
-  display: none; /* 초기에는 숨깁니다 */
+  display: none;
 }
 .intro_text1 {
   font-size: 90px;
   top: 700px;
 }
 .intro_text2 {
-  top: 780px;
+  top: 800px;
 }
 .intro_text2,
 .intro_text1 {
