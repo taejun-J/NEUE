@@ -257,16 +257,28 @@ body {
 
 .main-text-3-container {
   position: relative;
-  top: 880px;
+  top: 675px;
   left: 20px;
   width: 323px;
 }
 
+.left-car {
+  position: absolute;
+  top: 360px;
+  left: -26px;
+}
+
 .main-text-4-container {
   position: relative;
-  top: 721px;
+  top: 516px;
   left: 843px;
   width: 218px;
+}
+
+.right-car {
+  position: absolute;
+  top: 272px;
+  left: -54px;
 }
 
 .main-left-arrow {
@@ -419,6 +431,7 @@ body {
   position: relative;
   width: 1080px;
   height: 542px;
+  margin-bottom: 110px;
 }
 
 .roadmap-banner {
@@ -429,6 +442,23 @@ body {
   position: absolute;
   top: 170px;
   left: 296px;
+}
+
+.right-section,
+.left-section {
+  width: 450px;
+}
+
+.roadmap-title {
+  color: #08080a;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.roadmap-desc {
+  color: #08080a;
+  font-size: 16pt;
+  font-weight: 300;
 }
 
 .main-frame {
@@ -453,9 +483,16 @@ body {
 }
 
 .center-txt {
-  margin: 0 auto;
-  margin-top: 100px;
-  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.center-txt2 {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 300;
+  margin-top: 30px;
 }
 
 .qrcode {
@@ -478,4 +515,21 @@ body {
   margin-top: 160px;
   margin-bottom: 120px;
   display: block;
+}
+.paragraph {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.media-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 85px 0 70px 0;
+}
+.vision-vid {
+  width: 679px;
+  height: 242px;
+  object-fit: cover;
+  object-position: 83% 50%;
 }
