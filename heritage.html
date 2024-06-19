@@ -7,40 +7,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="box firstbox" onclick="changeImage(this, './images/neue1.png')">
+      <div class="box firstbox">
         <div class="text1">
-          <p class="text_big">KIDNEY GRILLE,</p>
-          <p class="text_medium">THE ICONIC</p>
-          <p style="font-size: 16px">
+          <p class="text_big">KIDNEY<br>GRILLE</p>
+          <!-- <p class="text_medium">THE ICONIC</p> -->
+          <p style="font-size: 16pt">
             BMW의 상징과도 같은 키드니 그릴. 도로 위 모두가 알아보는 영원한
             상징.
             <br />BMW 헤리티지의 정수가 어떻게 녹아들었는지 지금 바로
             확인해보세요.
           </p>
-          <p class="lt">></p>
         </div>
+        <p class="lt" onclick="changeArrow(this, './images/left-arrow.png'); changeImage(this, './images/neue1.png')"></p>
       </div>
-      <div class=" box secondbox" onclick="changeImage(this, './images/neue2.png')"background-position: 0 0 padding:20px>
+      <div class=" box secondbox" background-position: 0 0 padding:20px>
         <div class="text2">
-          <p class="text_big">HOFMEISTER KINK,&nbsp;&nbsp;&nbsp;&nbsp></p>
-          <p class="text_medium">WHATEVER</p>
-          <p style="font-size: 16px">
+          <p class="text_big" style="text-align: right;">HOFMEISTER</p>
+          <p class="text_medium" style="text-align: right;">KINK</p>
+          <p style="font-size: 16pt">
             옆 라인만 봐도 모두가 알아보는 BMW의 아이코닉한 옆태. <br />어떻게
             다시 탄생했는지 지금 바로 확인해보세요.
           </p>
         </div>
+        <p class="lt-hm" onclick="changeArrow(this, './images/left-arrow.png'); changeImage(this, './images/neue2.png')"></p>
       </div>
-      <div class="box thirdbox" onclick="changeImage(this, './images/neue3.png')">
+      
+      <div class="box thirdbox">
         <div class="text3">
-          <p class="text_big">SLEEK LIGHT,</p>
-          <p class="text_medium">SIGNATURE</p>
-          <p style="font-size: 16px">
+          <p class="text_big">SLEEK LIGHT</p>
+          <!-- <p class="text_medium">SIGNATURE</p> -->
+          <p style="font-size: 16pt">
             도로 위 맞은편 차도 바로 알아보는 BMW만의 엔젤 아이.<br />
             그 강렬한 눈빛이 어떻게 시그니처로 녹아들었는지 지금 바로
             확인해보세요.
           </p>
-          <p class="lt">></p>
         </div>
+        <p class="lt" onclick="changeArrow(this, './images/left-arrow.png'); changeImage(this, './images/neue3.png')"></p>
       </div>
     </div>
     <nav class="nav" style="top: -144px;">
@@ -63,13 +65,24 @@
   </div>
     <script>
   function changeImage(element, imageUrl) {
-    const currentBackgroundPosition = element.style.backgroundPosition || '95% 50%';
-    element.style.backgroundPosition = "-15px 0px";
-    element.style.backgroundImage = `url('${imageUrl}')`; 
+    const parentElement = element.parentElement;
+
+    // 상위 요소의 현재 배경 위치를 가져오거나 기본값을 설정합니다.
+    const currentBackgroundPosition = parentElement.style.backgroundPosition || '95% 50%';
+
+    // 상위 요소의 배경 위치와 이미지를 변경합니다.
+    parentElement.style.backgroundPosition = "-15px 0px";
+    parentElement.style.backgroundImage = `url('${imageUrl}')`;
+
+    // 배경 위치 전환 효과를 추가합니다.
     setTimeout(() => {
-      element.style.transition = 'background-position 1s ease-in-out';
-      element.style.backgroundPosition = '0% 50%';
-    }, 50); 
+        parentElement.style.transition = 'background-position 1s ease-in-out';
+        parentElement.style.backgroundPosition = '0% 50%';
+    }, 50);
+  }
+
+  function changeArrow(element, imageUrl) {
+    element.style.backgroundImage = `url('${imageUrl}')`; 
   }
 </script>
   </body>

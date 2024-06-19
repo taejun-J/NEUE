@@ -108,8 +108,8 @@ body {
   position: absolute;
   width: 100%;
   height: 800px;
-  background-image: url(./images/heri2.png);
-
+  background-image: url(./images/kink.png);
+  background-position: 15% 0%;
   clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 85%);
 }
 .thirdbox {
@@ -119,7 +119,7 @@ body {
   height: 700px;
   background-image: url(./images/heri3.png);
 
-  clip-path: polygon(-10% 0%, 100% 18%, 100% 100%, 0% 100%);
+  clip-path: polygon(-8% 0%, 100% 18%, 100% 100%, 0% 100%);
 }
 .firstbox::before,
 .secondbox::before,
@@ -130,7 +130,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 .firstbox p,
@@ -150,19 +150,56 @@ body {
 /* 공통 텍스트 속성 */
 .text_big {
   font-weight: 800;
-  font-size: 80px;
+  font-size: 50px;
   margin-bottom: 5px;
 }
 .text_medium {
-  font-weight: 400;
-  font-size: 80px;
+  font-weight: 800;
+  font-size: 50px;
   margin-bottom: 10px;
 }
+
 .lt {
+  width: 38px;
+  height: 62px;
+  left: 942px;
+  bottom: 100px;
+  font-size: 80px;
+  font-weight: 800;
+  background-image: url('./images/right-arrow.png');
+  background-repeat: no-repeat;
+}
+
+.rt {
+  width: 38px;
+  height: 62px;
   left: 942px;
   bottom: 220px;
   font-size: 80px;
   font-weight: 800;
+  background-image: url('./images/right-arrow.png');
+  background-repeat: no-repeat;
+}
+
+.lt-hm {
+  margin-top: 200px;
+  width: 38px;
+  height: 62px;
+  position: absolute;
+  top: 960px;
+  left: 459px;
+  background-image: url('./images/right-arrow.png');
+  background-repeat: no-repeat;
+}
+
+.rt-hm {
+  width: 38px;
+  height: 62px;
+  position: absolute;
+  top: 960px;
+  right: 62px;
+  background-image: url('./images/right-arrow.png');
+  background-repeat: no-repeat;
 }
 .secondbox {
   display: flex;
@@ -170,11 +207,11 @@ body {
 .text2 {
   position: relative;
 
-  top: 180px;
-  left: 126px;
+  top: 361px;
+  left: 450px;
 }
 .text3 {
-  margin: 310px 0 0 40px;
+  margin: 360px 0 0 40px;
 }
 
 .main-container {
@@ -261,12 +298,23 @@ body {
   z-index: 1;
 }
 
-.nav-links {
+.nav-border2 {
+  width: 1046px;
+  height: 2px;
+  background-color: #8a8a8a;
+  position: absolute;
+  bottom: 150px;
+  z-index: 1;
+}
+
+.nav-links,
+.nav-links2 {
   list-style: none;
   display: flex;
 }
 
-.nav-links li {
+.nav-links li,
+.nav-links2 li {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -279,11 +327,16 @@ body {
   z-index: 2;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links2 a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+}
+
+.nav-links2 a {
+  color: #08080a;
 }
 
 .logo {
@@ -360,4 +413,69 @@ body {
   height: 242px;
   object-fit: cover;
   object-position: 83% 50%;
+}
+
+.top-banner {
+  position: relative;
+  width: 1080px;
+  height: 542px;
+}
+
+.roadmap-banner {
+  position: absolute;
+}
+
+.roadmap-banner-text {
+  position: absolute;
+  top: 170px;
+  left: 296px;
+}
+
+.main-frame {
+  margin-top: 100px;
+}
+
+.first-box,
+.second-box {
+  margin-bottom: 80px;
+}
+
+.third-box {
+  margin-bottom: 75px;
+}
+
+.first-box,
+.second-box,
+.third-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.center-txt {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: block;
+}
+
+.qrcode {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+
+.color {
+  color: #08080a;
+}
+
+.real-logo {
+  width: 130px;
+  height: 125px;
+}
+
+.big-event {
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 120px;
+  display: block;
 }

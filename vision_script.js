@@ -2,7 +2,7 @@ let introVideo;
 let introEnded = false;
 
 function preload() {
-  introVideo = createVideo('/videos/bmw2.mp4', videoLoaded);
+  introVideo = createVideo('./videos/bmw2.mp4', videoLoaded);
 }
 
 function setup() {
